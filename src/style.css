@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #25272e;
+  color: whitesmoke;
+}
+
+header {
+  background: whitesmoke;
+  text-align: center;
+  padding: 10px;
+}
+
+header > h1 {
+  color: #25272e;
+  display: inline;
+}
+
+.content {
+  font-size: 20px;
+  text-align: center;
+}
+
+.result-box {
+  margin: 20px auto;
+  border: none;
+  text-align: center;
+  width: 200px;
+}
+
+.dice {
+  border: 3px solid whitesmoke;
+  border-radius: 8%;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.dice:hover {
+  background-color: red;
+}
+
+input {
+  width: 60px;
+  font-size: 30px;
+  border-radius: 10%;
+  text-align: center;
+}
+
+button {
+  font-size: 30px;
+  background-color: #25272e;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 10%;
+  padding: 0px 4px;
+}
+
+.result {
+  font-size: 50px;
+}
+
+.choices {
+  text-align: center;
+}
+
+.dice-rolled {
+  display: inline;
+  font-weight: bold;
+}
+
+.manipulate-dices {
+  margin-top: 50px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}

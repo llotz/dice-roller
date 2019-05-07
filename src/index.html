@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dice Roller</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="dice.png" />
+      <h1>Roll the dice!</h1>
+    </header>
+    <div class="content">
+      <div class="result-box">
+        <br />
+        Your
+        <div class="dice-rolled"></div>
+        roll
+        <div class="result">
+          0
+        </div>
+      </div>
+      Chose your weapon
+      <div class="choices"></div>
+      <div class="manipulate-dices">
+        Add a dice of your choice:<br />
+        <input type="text" maxlength="3" id="new-dice-value" value="0" />
+        <button id="add-dice">Add!</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="dice.js"></script>
