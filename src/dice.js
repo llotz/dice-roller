@@ -37,6 +37,7 @@ function getNewDiceValueFromUI() {
 
 function addDice(diceToAdd) {
   if (diceToAdd == null) return;
+  if (diceToAdd == 1) alert("That makes sense, punk!");
   dices.push(diceToAdd);
   dices_span.innerHTML += generateDiceDOM(diceToAdd);
   dices.forEach(AddNewClickListener);
