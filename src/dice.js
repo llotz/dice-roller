@@ -45,7 +45,15 @@ function addDice(diceToAdd) {
 }
 
 function generateDiceDOM(diceValue) {
-  return `<div class='choice dice noselect' id='dice${diceValue}'>w${diceValue}</div>`;
+  return `<div class='choice dice noselect' onclick='spinDice(${diceValue})' id='dice${diceValue}'>w${diceValue}</div>`;
+}
+
+function spinDice(diceValue) {
+  var diceClasses = document.getElementById(`dice${diceValue}`).classList;
+  diceClasses.add("spin");
+  setTimeout(() => {
+    diceClasses.remove("spin");
+  }, 300);
 }
 
 function AddNewClickListener(diceValue) {
